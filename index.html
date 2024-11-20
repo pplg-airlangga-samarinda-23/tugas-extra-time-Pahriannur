@@ -3,22 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Rapi Table</title>
     <link rel="stylesheet" href="lalu.css">
 </head>
-<body class="bg-gray-100">
-    <div class="flex h-screen">
+<body>
+    <div class="flex">
         <!-- Sidebar -->
-        <div class="kemar w-1/5 bg-white border-r border-gray-300"></div>
-        
+        <div class="sidebar">
+            <div class="sidebar-header"></div>
+            <div class="sidebar-menu">
+                <button class="menu-item active">Dashboard</button>
+                <button class="menu-item">Master Barang</button>
+                <button class="menu-item">Receiving</button>
+                <button class="menu-item">Issuing</button>
+            </div>
+        </div>
+
         <!-- Main Content -->
-        <div class="main-content flex-1 p-4">
-            <div id="header" class="flex justify-between items-center mb-4"></div>
-            <div id="search-bar" class="flex justify-end mb-4"></div>
-            <div id="table-container" class="overflow-x-auto"></div>
-            <div id="footer" class="mt-4 text-center"></div>
+        <div class="main-content">
+            <!-- Header Section -->
+            <div class="header-section">
+                <div class="user-info">
+                    <div class="user-avatar">U</div>
+                    <span>username</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Cari sesuatu..." class="search-input">
+                    <button class="search-button">Cari</button>
+                </div>
+            </div>
+
+            <!-- Table Section -->
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Barang</th>
+                                <th>Pengadaan</th>
+                                <th>Stok</th>
+                                <th>Status</th>
+                                <th>Baik</th>
+                                <th>Rusak</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Barang A</td>
+                                <td>2024-01-01</td>
+                                <td>50</td>
+                                <td>Aktif</td>
+                                <td>45</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Barang B</td>
+                                <td>2024-01-05</td>
+                                <td>30</td>
+                                <td>Nonaktif</td>
+                                <td>25</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <script src="kula.js"></script>
