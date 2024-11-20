@@ -1,0 +1,103 @@
+@import url('https://cdn.tailwindcss.com');
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    background-color: #86efac;
+    border: 2px double black; /* Border dobel */
+    margin: 0.5rem;
+}
+
+
+.sidebar {
+    width: 29%;
+    border: 1px solid black;
+    margin:1rem;
+    padding: 1rem;
+}
+
+.header {
+    background-color: #86efac; 
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-field {
+    width: 90%;
+    padding: 0.5rem;
+    background-color: #fde68a; 
+    border: 1px solid black;
+}
+
+.login-button {
+    width: 50%; 
+    padding: 0.5rem;
+    background-color: #fde68a;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto; 
+    display: block; 
+}
+
+
+.forgot-password {
+    color: black;
+    text-decoration: none;
+    text-align: center; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.kemar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.kemar .bg-green-200 {
+    height: 4rem;
+}
+
+.kemar button {
+    background-color: #bfdbfe; /* Default blue */
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.sidebar button:hover {
+    background-color: #93c5fd; /* Slightly darker on hover */
+}
+
+.main-content .header span {
+    font-weight: bold;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.table-container th,
+.table-container td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer span {
+    display: inline-block;
+    margin-right: 1rem;
+}

@@ -1,0 +1,42 @@
+.kemar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.kemar .bg-green-200 {
+    height: 4rem;
+}
+
+.kemar button {
+    background-color: #bfdbfe; /* Default blue */
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.sidebar button:hover {
+    background-color: #93c5fd; /* Slightly darker on hover */
+}
+
+.main-content .header span {
+    font-weight: bold;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.table-container th,
+.table-container td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer span {
+    display: inline-block;
+    margin-right: 1rem;
+}
